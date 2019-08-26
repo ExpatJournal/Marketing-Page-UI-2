@@ -6,6 +6,9 @@ nav{
         justify-content: space-between;
         align-items: center;
         padding-top: 10px;
+        @media @phone{
+            flex-direction: column;
+        }
     }
     a{
         text-decoration: none;
@@ -13,6 +16,9 @@ nav{
         color: black;
         &:hover{
             color: green;
+        }
+        @media @phone{
+            padding-bottom: 25px;
         }
     }
 }

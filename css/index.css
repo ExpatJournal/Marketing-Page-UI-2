@@ -174,11 +174,11 @@ footer {
   color: #22283B;
   background: #796510;
   padding: 20px 0;
-  border: 1px double #e0e0e0;
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 3%;
 }
 nav {
   background: #D6D6D6;
@@ -190,6 +190,11 @@ nav div {
   align-items: center;
   padding-top: 10px;
 }
+@media (max-width: 500px) {
+  nav div {
+    flex-direction: column;
+  }
+}
 nav a {
   text-decoration: none;
   font-size: 1.6rem;
@@ -198,12 +203,30 @@ nav a {
 nav a:hover {
   color: green;
 }
+@media (max-width: 500px) {
+  nav a {
+    padding-bottom: 25px;
+  }
+}
 header {
   display: flex;
   background: #90EE90;
 }
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+  }
+}
 header div {
   width: 48%;
+}
+@media (max-width: 500px) {
+  header div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
 }
 header .button-container {
   width: 48%;
@@ -215,8 +238,26 @@ header .button-container button {
   width: 50%;
   height: 20%;
   background: skyblue;
+  color: darkgreen;
   border: 0px;
   border-radius: 10px;
+}
+header .button-container button:hover {
+  background: darkgreen;
+  color: skyblue;
+  transition: 0.5s;
+  cursor: pointer;
+}
+@media (max-width: 500px) {
+  header .button-container button {
+    padding: 5px 20px;
+  }
+}
+@media (max-width: 500px) {
+  header .button-container {
+    width: 100%;
+    margin-bottom: 5%;
+  }
 }
 header h1 {
   padding: 5%;
@@ -224,6 +265,7 @@ header h1 {
 header p {
   padding-left: 5%;
   font-size: 1.8rem;
+  color: darkgreen;
 }
 .main-content {
   background: darkgreen;
@@ -232,18 +274,65 @@ header p {
   flex-direction: row;
   justify-content: space-around;
   margin-top: 10px;
-  padding: 20px 0;
+  padding: 40px 0;
+}
+@media (max-width: 500px) {
+  .main-content {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 .main-content .top-boxes {
   background: #85be85;
   width: 45%;
   margin-top: 10px;
-  border: 5px solid purple;
+  border: 2px solid forestgreen;
   margin-bottom: 30px;
+}
+.main-content .top-boxes p {
+  margin-left: 5%;
+  color: darkgreen;
+  font-size: 1.8rem;
+}
+.main-content .top-boxes button {
+  width: 25%;
+  height: 10%;
+  background: skyblue;
+  color: darkgreen;
+  border: 0px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  margin-left: 5%;
+}
+.main-content .top-boxes button:hover {
+  background: darkgreen;
+  color: skyblue;
+  transition: 0.5s;
+  cursor: pointer;
+}
+@media (max-width: 500px) {
+  .main-content .top-boxes button {
+    padding: 5px 20px;
+  }
+}
+@media (max-width: 500px) {
+  .main-content .top-boxes {
+    width: 100%;
+  }
 }
 .main-content .bottom-box {
   width: 98%;
   background: #85be85;
   margin-bottom: 10px;
-  border: 5px solid purple;
+  border: 1px solid forestgreen;
+}
+.main-content .bottom-box p {
+  margin-left: 5%;
+  font-size: 1.8rem;
+  color: darkgreen;
+}
+@media (max-width: 500px) {
+  .main-content .bottom-box {
+    display: none;
+  }
 }
