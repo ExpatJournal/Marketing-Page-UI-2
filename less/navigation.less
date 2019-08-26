@@ -1,11 +1,27 @@
 nav{
     background: @graybackground;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    opacity: .8;
+    @media @phone{
+        position: relative;
+    }
+    &:hover{
+        opacity: 1;
+    }
     div{
         margin:0 28%;
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding-top: 10px;
+        @media (max-width: 1136px) {
+            margin: 0 15%;
+        }
+        @media (max-width: 772px) {
+            margin: 0 8%;
+        }
         @media @phone{
             flex-direction: column;
         }
