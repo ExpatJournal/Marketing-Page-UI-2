@@ -14,6 +14,12 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        border-bottom: 4px solid rgb(39, 49, 39);
+        margin-top: 15px;
+        @media @phone{
+            flex-direction: column;
+            align-items: center;
+        }
         h2{
             width: 100%;
             color: rgb(29, 87, 29)
@@ -23,15 +29,29 @@
             flex-direction: column;
             align-items: center;
             width: 42%;
+            height: 68%;
             background: forestgreen;
             border-radius: 8px;
             margin-bottom: 25px;
+            
+            
+            &:hover{
+                width: 48%;
+                transition: .8s;
+            }
             p{
                 font-size: 2.2rem;
                 color: rgb(188, 255, 188)
             }
             img{
                 border-radius: 8px;
+            }
+            @media @phone{
+                width: 88%;
+                &:hover{
+                    width: 95%;
+                    transition: .8s;
+                }
             }
         }
     }

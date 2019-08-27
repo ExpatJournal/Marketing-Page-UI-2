@@ -387,6 +387,14 @@ header p {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  border-bottom: 4px solid #273127;
+  margin-top: 15px;
+}
+@media (max-width: 500px) {
+  .main-content-about .team {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .main-content-about .team h2 {
   width: 100%;
@@ -397,9 +405,14 @@ header p {
   flex-direction: column;
   align-items: center;
   width: 42%;
+  height: 68%;
   background: forestgreen;
   border-radius: 8px;
   margin-bottom: 25px;
+}
+.main-content-about .team .portrait-boxes:hover {
+  width: 48%;
+  transition: 0.8s;
 }
 .main-content-about .team .portrait-boxes p {
   font-size: 2.2rem;
@@ -407,4 +420,13 @@ header p {
 }
 .main-content-about .team .portrait-boxes img {
   border-radius: 8px;
+}
+@media (max-width: 500px) {
+  .main-content-about .team .portrait-boxes {
+    width: 88%;
+  }
+  .main-content-about .team .portrait-boxes:hover {
+    width: 95%;
+    transition: 0.8s;
+  }
 }
