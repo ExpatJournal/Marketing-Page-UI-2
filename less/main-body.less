@@ -1,3 +1,9 @@
+.background{
+    position:fixed;
+    z-index: -1;
+    top: -250px;
+    min-width: 2100px;
+}
 header{
     margin-top: 52px;
     display: flex;
@@ -21,16 +27,18 @@ header{
         justify-content: center;
         align-items: center;
         button{
+            .button-font();
             width: 50%;
             height: 20%;
-            background: skyblue;
-            color: darkgreen;
+            background: @darkbuttoncolor;
+            color: @lightbuttoncolor;
             border: 0px;
             border-radius: 10px;
             &:hover{
-                background: darkgreen;
-                color: skyblue;
+                background:@lightbuttoncolor;
+                color: @darkbuttoncolor;
                 transition: .5s;
+                font-weight: bold;
                 cursor: pointer;
             }
             @media @phone{
@@ -76,18 +84,20 @@ header{
             font-size: 1.8rem;
         }
         button{
+            .button-font();
             width: 25%;
             height: 10%;
-            background: skyblue;
-            color: darkgreen;
+            background: @darkbuttoncolor;
+            color: @lightbuttoncolor;
             border: 0px;
             border-radius: 10px;
             margin-bottom: 30px;
             margin-left: 5%;
             &:hover{
-                background: darkgreen;
-                color: skyblue;
+                background: @lightbuttoncolor;
+                color: @darkbuttoncolor;
                 transition: .5s;
+                font-weight: bold;
                 cursor: pointer;
             }
             @media @phone{

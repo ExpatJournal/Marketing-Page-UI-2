@@ -131,7 +131,6 @@ table {
 }
 html {
   font-size: 62.5%;
-  background-image: url("https://images.unsplash.com/photo-1539716489363-1077229fe5a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1355&q=80");
 }
 html,
 body {
@@ -166,7 +165,7 @@ img {
   height: auto;
 }
 .container {
-  max-width: 800px;
+  max-width: 850px;
   width: 100%;
   margin: 0 auto;
 }
@@ -178,7 +177,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 3%;
+  margin-top: 2%;
 }
 nav {
   background: #D6D6D6;
@@ -230,6 +229,12 @@ nav a:hover {
     padding-bottom: 25px;
   }
 }
+.background {
+  position: fixed;
+  z-index: -1;
+  top: -250px;
+  min-width: 2100px;
+}
 header {
   margin-top: 52px;
   display: flex;
@@ -259,17 +264,20 @@ header .button-container {
   align-items: center;
 }
 header .button-container button {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 1.4rem;
   width: 50%;
   height: 20%;
-  background: skyblue;
-  color: darkgreen;
+  background: #9e0606;
+  color: #cacaca;
   border: 0px;
   border-radius: 10px;
 }
 header .button-container button:hover {
-  background: darkgreen;
-  color: skyblue;
+  background: #cacaca;
+  color: #9e0606;
   transition: 0.5s;
+  font-weight: bold;
   cursor: pointer;
 }
 @media (max-width: 500px) {
@@ -319,19 +327,22 @@ header p {
   font-size: 1.8rem;
 }
 .main-content .top-boxes button {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 1.4rem;
   width: 25%;
   height: 10%;
-  background: skyblue;
-  color: darkgreen;
+  background: #9e0606;
+  color: #cacaca;
   border: 0px;
   border-radius: 10px;
   margin-bottom: 30px;
   margin-left: 5%;
 }
 .main-content .top-boxes button:hover {
-  background: darkgreen;
-  color: skyblue;
+  background: #cacaca;
+  color: #9e0606;
   transition: 0.5s;
+  font-weight: bold;
   cursor: pointer;
 }
 @media (max-width: 500px) {
