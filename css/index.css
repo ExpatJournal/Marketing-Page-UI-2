@@ -238,7 +238,7 @@ nav a:hover {
 header {
   margin-top: 52px;
   display: flex;
-  background: #90EE90;
+  background: #5fcc5f;
 }
 @media (max-width: 500px) {
   header {
@@ -370,4 +370,24 @@ header p {
   .main-content .bottom-box {
     display: none;
   }
+}
+.about-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+.main-content-about {
+  display: flex;
+  flex-direction: column;
+}
+.main-content-about .team {
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-content-about .team h2 {
+  width: 100%;
+}
+.main-content-about .team .portrait-boxes {
+  width: 35%;
 }
