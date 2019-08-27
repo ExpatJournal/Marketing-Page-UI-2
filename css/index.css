@@ -380,14 +380,31 @@ header p {
 .main-content-about {
   display: flex;
   flex-direction: column;
+  width: 95%;
+  margin: 15px auto;
 }
 .main-content-about .team {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .main-content-about .team h2 {
   width: 100%;
+  color: #1d571d;
 }
 .main-content-about .team .portrait-boxes {
-  width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 42%;
+  background: forestgreen;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+.main-content-about .team .portrait-boxes p {
+  font-size: 2.2rem;
+  color: #bcffbc;
+}
+.main-content-about .team .portrait-boxes img {
+  border-radius: 8px;
 }

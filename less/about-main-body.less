@@ -8,14 +8,31 @@
 .main-content-about{
     display: flex;
     flex-direction: column;
+    width: 95%;
+    margin: 15px auto;
     .team{
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
         h2{
-            width: 100%
+            width: 100%;
+            color: rgb(29, 87, 29)
         }
         .portrait-boxes{
-            width: 35%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 42%;
+            background: forestgreen;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            p{
+                font-size: 2.2rem;
+                color: rgb(188, 255, 188)
+            }
+            img{
+                border-radius: 8px;
+            }
         }
     }
 }
