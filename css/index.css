@@ -263,9 +263,13 @@ header .button-container {
   justify-content: center;
   align-items: center;
 }
-header .button-container button {
+header .button-container .button {
   font-family: 'Varela Round', sans-serif;
   font-size: 1.4rem;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 50%;
   height: 20%;
   background: #9e0606;
@@ -273,7 +277,7 @@ header .button-container button {
   border: 0px;
   border-radius: 10px;
 }
-header .button-container button:hover {
+header .button-container .button:hover {
   background: #cacaca;
   color: #9e0606;
   transition: 0.5s;
@@ -283,11 +287,11 @@ header .button-container button:hover {
   cursor: pointer;
   font-size: 2.1rem;
 }
-header .button-container button:not(:hover) {
+header .button-container .button:not(:hover) {
   transition: 0.5s;
 }
 @media (max-width: 500px) {
-  header .button-container button {
+  header .button-container .button {
     padding: 5px 20px;
   }
 }
