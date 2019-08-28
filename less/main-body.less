@@ -133,7 +133,7 @@ header{
         margin-bottom: 10px;
         border: 1px solid forestgreen;
         p{
-            margin-left: 5%;
+            text-align: center;
             font-size: 1.8rem;
             color: darkgreen;
         }
@@ -160,9 +160,16 @@ header{
         flex-direction: column;
         align-items: center;
         width: 30%;
+        height: 25%;
         background: whitesmoke;
         border-radius: 10px;
         border: 3px solid rgb(37, 97, 37);
+        &:hover{
+            width: 34%;
+            margin: 5px;
+            transition: .5s;
+        }
+        .unhover();
         @media @phone {
             width: 85%;
             margin-bottom: 15px;
@@ -179,6 +186,10 @@ header{
             border-top: 1px solid darkgray;
             p{
                 color:darkgray;
+                &:hover{
+                    color:rgb(98, 98, 231);
+                    cursor: pointer;
+                }
             }
         }
     }

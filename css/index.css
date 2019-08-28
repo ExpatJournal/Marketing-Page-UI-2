@@ -407,7 +407,7 @@ header p {
   border: 1px solid forestgreen;
 }
 .main-content .bottom-box p {
-  margin-left: 5%;
+  text-align: center;
   font-size: 1.8rem;
   color: darkgreen;
 }
@@ -436,9 +436,18 @@ header p {
   flex-direction: column;
   align-items: center;
   width: 30%;
+  height: 25%;
   background: whitesmoke;
   border-radius: 10px;
   border: 3px solid #256125;
+}
+.bottom-content .posts:hover {
+  width: 34%;
+  margin: 5px;
+  transition: 0.5s;
+}
+.bottom-content .posts:not(:hover) {
+  transition: 0.5s;
 }
 @media (max-width: 500px) {
   .bottom-content .posts {
@@ -459,6 +468,10 @@ header p {
 }
 .bottom-content .posts .interact-box p {
   color: darkgray;
+}
+.bottom-content .posts .interact-box p:hover {
+  color: #6262e7;
+  cursor: pointer;
 }
 .about-header {
   display: flex;
