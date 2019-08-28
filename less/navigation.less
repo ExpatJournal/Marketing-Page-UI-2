@@ -7,6 +7,9 @@ nav{
     @media @phone{
         position: relative;
     }
+    @media @tablet{
+        position: relative;
+    }
     &:hover{
         opacity: 1;
     }
@@ -14,6 +17,7 @@ nav{
         margin:0 28%;
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         align-items: center;
         padding-top: 10px;
         @media (max-width: 1136px) {
@@ -26,6 +30,13 @@ nav{
             flex-direction: column;
         }
     }
+    h2{
+        @media @tablet{
+            width: 100%;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+    }
     a{
         text-decoration: none;
         font-size: 1.6rem;
@@ -34,7 +45,10 @@ nav{
             color: green;
         }
         @media @phone{
-            padding-bottom: 25px;
+            margin-bottom: 25px;
+        }
+        @media @tablet{
+            margin-bottom: 20px;
         }
     }
 }

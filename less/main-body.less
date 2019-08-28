@@ -11,6 +11,10 @@ header{
     @media @phone {
         flex-direction: column;
         margin-top: 0px;
+        text-align: center;
+    }
+    @media @tablet {
+        margin-top: 0px;
     }
     div{
         width: 48%;
@@ -65,6 +69,9 @@ header{
         padding-left: 5%;
         font-size: 1.8rem;
         color: darkgreen;
+        @media @phone{
+            display: none;
+        }
     }
 }
 

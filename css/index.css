@@ -191,6 +191,11 @@ nav {
     position: relative;
   }
 }
+@media (max-width: 800px) {
+  nav {
+    position: relative;
+  }
+}
 nav:hover {
   opacity: 1;
 }
@@ -198,6 +203,7 @@ nav div {
   margin: 0 28%;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   padding-top: 10px;
 }
@@ -216,6 +222,13 @@ nav div {
     flex-direction: column;
   }
 }
+@media (max-width: 800px) {
+  nav h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
 nav a {
   text-decoration: none;
   font-size: 1.6rem;
@@ -226,7 +239,12 @@ nav a:hover {
 }
 @media (max-width: 500px) {
   nav a {
-    padding-bottom: 25px;
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 800px) {
+  nav a {
+    margin-bottom: 20px;
   }
 }
 .background {
@@ -243,6 +261,12 @@ header {
 @media (max-width: 500px) {
   header {
     flex-direction: column;
+    margin-top: 0px;
+    text-align: center;
+  }
+}
+@media (max-width: 800px) {
+  header {
     margin-top: 0px;
   }
 }
@@ -308,6 +332,11 @@ header p {
   padding-left: 5%;
   font-size: 1.8rem;
   color: darkgreen;
+}
+@media (max-width: 500px) {
+  header p {
+    display: none;
+  }
 }
 .main-content {
   background: darkgreen;
@@ -480,6 +509,10 @@ header p {
 .main-content-about .team .portrait-boxes p {
   font-size: 2.2rem;
   color: #bcffbc;
+}
+.main-content-about .team .portrait-boxes .about-text {
+  font-size: 1.7rem;
+  margin-left: 6px;
 }
 .main-content-about .team .portrait-boxes img {
   border-radius: 8px;
