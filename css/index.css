@@ -454,6 +454,11 @@ header p {
     width: 85%;
     margin-bottom: 15px;
   }
+  .bottom-content .posts:hover {
+    width: 90%;
+    margin: 5px;
+    transition: 0.5s;
+  }
 }
 .bottom-content .posts p {
   color: black;
