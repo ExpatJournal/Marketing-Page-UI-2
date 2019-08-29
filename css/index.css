@@ -142,6 +142,7 @@ h3,
 h4,
 h5 {
   font-family: 'Varela Round', sans-serif;
+  color: #224122;
 }
 h1 {
   font-size: 4rem;
@@ -232,7 +233,7 @@ nav div {
 nav a {
   text-decoration: none;
   font-size: 1.6rem;
-  color: black;
+  color: #224122;
 }
 nav a:hover {
   color: green;
@@ -296,14 +297,14 @@ header .button-container .button {
   align-items: center;
   width: 50%;
   height: 20%;
-  background: #9e0606;
-  color: #cacaca;
+  background: #316421;
+  color: #b0e4c6;
   border: 0px;
   border-radius: 10px;
 }
 header .button-container .button:hover {
-  background: #cacaca;
-  color: #9e0606;
+  background: #b0e4c6;
+  color: #316421;
   transition: 0.5s;
   font-weight: bold;
   width: 100%;
@@ -370,16 +371,16 @@ header p {
   font-size: 1.4rem;
   width: 25%;
   height: 10%;
-  background: #9e0606;
-  color: #cacaca;
+  background: #316421;
+  color: #b0e4c6;
   border: 0px;
   border-radius: 10px;
   margin-bottom: 30px;
   margin-left: 5%;
 }
 .main-content .top-boxes button:hover {
-  background: #cacaca;
-  color: #9e0606;
+  background: #b0e4c6;
+  color: #316421;
   transition: 0.5s;
   font-weight: bold;
   cursor: pointer;
@@ -430,6 +431,8 @@ header p {
 }
 .bottom-content h2 {
   width: 100%;
+  text-align: center;
+  margin: 20px 0;
 }
 .bottom-content .posts {
   display: flex;
@@ -505,7 +508,7 @@ header p {
 }
 .main-content-about .team h2 {
   width: 100%;
-  color: #1d571d;
+  color: #224122;
 }
 .main-content-about .team .portrait-boxes {
   display: flex;
@@ -527,6 +530,19 @@ header p {
 .main-content-about .team .portrait-boxes p {
   font-size: 2.2rem;
   color: #bcffbc;
+}
+.main-content-about .team .portrait-boxes .dot-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.main-content-about .team .portrait-boxes .dot-container .dot {
+  height: 10px;
+  width: 10px;
+  color: #66c466;
+  background-color: #66c466;
+  border-radius: 50%;
+  margin-bottom: 10px;
 }
 .main-content-about .team .portrait-boxes .about-text {
   font-size: 1.7rem;
