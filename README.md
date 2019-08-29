@@ -1,6 +1,6 @@
 # Marketing-Page-UI-2
 
-This website is the landing page that links to a react app for a social media website that is designed specifically for expats. The front page describes the app, and has several links to the app. It also contatains some example posts so users can see what a typical post on the site looks like. 
+This website is the landing page that links to a react app for a social media website that is designed specifically for expats. The front page describes the app, and has several links to the app. It also contains some example posts so users can see what a typical post on the site looks like. 
 
 The "Meet the Team" button in the navigation bar will bring the users to a page showing the developer team that created the product, and a small block of information about each developer.
 
