@@ -296,14 +296,14 @@ header .button-container .button {
   align-items: center;
   width: 50%;
   height: 20%;
-  background: #9e0606;
-  color: #cacaca;
+  background: #316421;
+  color: #b0e4c6;
   border: 0px;
   border-radius: 10px;
 }
 header .button-container .button:hover {
-  background: #cacaca;
-  color: #9e0606;
+  background: #b0e4c6;
+  color: #316421;
   transition: 0.5s;
   font-weight: bold;
   width: 100%;
@@ -370,16 +370,16 @@ header p {
   font-size: 1.4rem;
   width: 25%;
   height: 10%;
-  background: #9e0606;
-  color: #cacaca;
+  background: #316421;
+  color: #b0e4c6;
   border: 0px;
   border-radius: 10px;
   margin-bottom: 30px;
   margin-left: 5%;
 }
 .main-content .top-boxes button:hover {
-  background: #cacaca;
-  color: #9e0606;
+  background: #b0e4c6;
+  color: #316421;
   transition: 0.5s;
   font-weight: bold;
   cursor: pointer;
@@ -527,6 +527,19 @@ header p {
 .main-content-about .team .portrait-boxes p {
   font-size: 2.2rem;
   color: #bcffbc;
+}
+.main-content-about .team .portrait-boxes .dot-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.main-content-about .team .portrait-boxes .dot-container .dot {
+  height: 10px;
+  width: 10px;
+  color: #66c466;
+  background-color: #66c466;
+  border-radius: 50%;
+  margin-bottom: 10px;
 }
 .main-content-about .team .portrait-boxes .about-text {
   font-size: 1.7rem;
